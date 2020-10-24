@@ -12,11 +12,11 @@ func main() {
 
 	total := 0.0
 
-	for i := 0; i < len(notas); i++ {
+	for i := 0; i < len(notas); i++ { // len para obter o tamanho do array
 		total += notas[i]
 	}
 
-	media := total / float64(len(notas))
+	media := total / float64(len(notas))          // converter o tamanho de inteiro para float64
 	fmt.Println("A média das notas é", media)     // várias casas decimais
 	fmt.Printf("A média das notas é %.2f", media) // ponto flutuante com duas casas decimais
 }
